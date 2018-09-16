@@ -60,7 +60,6 @@ function answerCheck() {
   else if (answerValue == quizData.questionData[quizData.questionNumber].correctAnswer) {
     quizData.totalCorrect++;
     quizData.questionNumber++;
-    console.log('asdf');
     $('.noAnswerSelected').hide();
     $('.quizWrapper').hide(400);
     answerCorrectPage();
@@ -106,7 +105,7 @@ function generateAnswers(questions, questionNum) {
   let answerNum = 0;
   let answers = "";
   quizData.questionData[questionNum].answers.forEach(key => {
-    answers += `<input  class="answerChoices" type="radio" name="answer" id="Answer" value="${answerNum}" required/><label for="${answerNum}" class="answerText">${quizData.questionData[quizData.questionNumber].answers[`${answerNum}`]}</label><br>`;
+    answers += `<input  class="answerChoices" type="radio" name="answer" id="Answer${answerNum}" value="${answerNum}" required/><label for="${answerNum}" class="answerText">${quizData.questionData[quizData.questionNumber].answers[`${answerNum}`]}</label><br>`;
     answerNum++;
   });
   return answers;

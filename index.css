@@ -4,7 +4,7 @@ body {
 }
 
 header { 
-  background-color: rgba(228, 226, 225, 0.781);
+  background-color: rgba(245, 242, 241, 0.781);
   margin-bottom: 40px;
   text-align: center;
   border: 2px ridge rgb(203, 213, 233);
@@ -26,7 +26,7 @@ header {
 .questionBox {
   padding-top: 20px;
   border: 3px ridge lightsteelblue;
-  background-color:  rgba(228, 226, 225, 0.781);
+  background-color:  rgba(240, 238, 237, 0.781);
   padding: 10px;
   max-width: 900px;
   margin: auto;
